@@ -28,7 +28,8 @@ function newNonPlayableCharacter(x, y) {
         element.src = `./assets/red-character/east.gif`
         return new Promise(function(resolve) {
             setTimeout(function() {
-               stop(resolve)
+               resolve()
+               stop()
             }, time)
         })
     }
@@ -38,7 +39,8 @@ function newNonPlayableCharacter(x, y) {
         element.src = `./assets/red-character/north.gif`
         return new Promise(function(resolve) {
             setTimeout(function() {
-               stop(resolve)
+               resolve()
+               stop()
             }, time)
         })
     }
@@ -48,7 +50,8 @@ function newNonPlayableCharacter(x, y) {
         element.src = `./assets/red-character/west.gif`
         return new Promise(function(resolve) {
             setTimeout(function() {
-               stop(resolve)
+               resolve()
+               stop()
             }, time)
         })
     }
@@ -58,7 +61,8 @@ function newNonPlayableCharacter(x, y) {
         element.src = `./assets/red-character/south.gif`
         return new Promise(function(resolve) {
             setTimeout(function() {
-               stop(resolve)
+               resolve()
+               stop()
             }, time)
         })
     }
@@ -68,10 +72,13 @@ function newNonPlayableCharacter(x, y) {
         element.src = `./assets/red-character/static.gif`
         return new Promise(function(resolve) {
             setTimeout(function() {
-               stop(resolve)
+               resolve()
+               stop()
             }, time)
         })
     }
+
+    
 
     return {
         element: element,
